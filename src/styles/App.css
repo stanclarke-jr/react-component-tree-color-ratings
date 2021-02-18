@@ -241,6 +241,12 @@ figure {
   min-width: 300px;
 }
 button {
-  background-color: #282c34;
+  background-color: black;
   color: white;
+}
+form {
+  padding: 40px 10px;
+}
+input {
+  margin: .2rem;
 }

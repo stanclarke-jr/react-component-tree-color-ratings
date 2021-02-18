@@ -12,8 +12,8 @@ export default function ColorList({
   return (
     <div className="colors">
       {colors.map((color) => (
-        <section>
-          <Color key={color.id} {...color} onRemove={onRemoveColor} onRate={onRateColor} />
+        <section key={color.id}>
+          <Color {...color} onRemove={onRemoveColor} onRate={onRateColor} />
         </section>
       ))}
     </div>
