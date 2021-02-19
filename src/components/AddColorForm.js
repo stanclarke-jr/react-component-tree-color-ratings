@@ -21,7 +21,9 @@ export default function AddColorForm() {
     <form onSubmit={submit}>
       <input type="text" {...titleProps} placeholder="Enter color name..." required />
       <input type="color" {...colorProps} required />
-      <button type="submit">+ADD</button>
+      <div>
+        <button type="submit">+ADD</button>
+      </div>
     </form>
   );
 }
