@@ -1,11 +1,13 @@
+/* eslint-disable import/prefer-default-export */
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/style.css';
+import { render } from 'react-dom';
+import ColorProvider from './hooks/colorHooks';
 import App from './components/App';
+import './styles/style.css';
 
-ReactDOM.render(
-  <React.StrictMode>
+render(
+  <ColorProvider>
     <App />
-  </React.StrictMode>,
+  </ColorProvider>,
   document.getElementById('root')
 );
